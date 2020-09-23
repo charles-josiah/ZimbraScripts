@@ -121,7 +121,7 @@ sub printIPs {
               $smatch = 1;
           }
          # print all the attacking ip's
-         ($ipset ?  print "ipset add blacklist24hr $ip -exists\n" : print "$ip\n") if $smatch;
+         ($ipset ?  print "ipset add blacklist24hr $ip \n" : print "$ip\n") if $smatch;
       }
    }
 }
